@@ -16,16 +16,16 @@ const translations = {
       credits: "Créditos"
     },
     press: {
-      p1: "El dúo post-punk AUTODEFENSA anuncia el lanzamiento de su nuevo single \"Anguila\", disponible en todas las plataformas digitales a partir del 4 de abril de 2025. Este lanzamiento anticipa su próximo álbum debut, que verá la luz en los próximos meses.",
-      p2: "\"Anguila\", grabado, mezclado y masterizado en los míticos Estudios Panda para INVS Label, sucede a su lanzamiento anterior \"Parte de Mi\" (2023) y representa una evolución en la propuesta musical del dúo.",
-      p3: "Además del lanzamiento del single el 4 de abril, AUTODEFENSA estrenará el videoclip oficial de \"Anguila\" durante el mismo mes, pieza audiovisual que complementa la estética brutalista que caracteriza al proyecto."
+      p1: "El dúo post-punk AUTODEFENSA anuncia el lanzamiento de \"Anguila\", grabado, mezclado y masterizado en los míticos Estudios Panda, quienes consideran este single \"un nuevo himno del género post-punk, goth y coldwave\". Disponible en todas las plataformas digitales a partir del 4 de abril de 2025.",
+      p2: "La producción estuvo a cargo de Sebastián Bertuzzi, propietario de Estudios Panda y reconocido por elevar los estándares de producción musical local a niveles internacionales, junto a INVS Label. El single cuenta con el arte de Jonathan Sirit, diseñador destacado en la cultura mundial del post-punk y baterista de la banda barcelonesa \"Belgrado\".",
+      p3: "El proyecto, integrado por Terror (voz) —creador del Festival Roca Negra, el evento gótico más importante de Argentina— y Sangre (guitarra, ritmos, sintetizadores), combina la intensidad del post-punk con matices oscuros y electrónicos, enmarcados en una marcada estética brutalista. Además del lanzamiento del single, AUTODEFENSA estrenará el videoclip oficial durante abril."
     },
     about: {
-      p1: "Formado en 2022, AUTODEFENSA es un proyecto musical integrado por Terror (voz) y Sangre (guitarra, ritmos, sintetizadores) que combina la intensidad del post-punk con matices oscuros y electrónicos, creando un universo sonoro donde conviven elementos metálicos y sintéticos con la organicidad de instrumentos tocados en vivo.",
-      p2: "La propuesta del dúo se complementa con una marcada estética brutalista que define tanto su identidad visual como sonora.",
-      p3: "En sus apenas dos años de trayectoria, la banda ha logrado posicionarse como una propuesta destacada dentro de la escena underground de Buenos Aires, presentándose en venues emblemáticos como La Tangente, Strummer Bar, El Emergente, La Manzana de las Luces y el Teatro Rojas.",
-      p4: "Entre sus logros más destacados se encuentra haber sido teloneros de la legendaria banda Clan of Xymox en Uniclub.",
-      p5: "Su próximo álbum debut promete consolidar la propuesta musical de AUTODEFENSA y establecerlos como una de las bandas más interesantes del circuito post-punk/darkwave local."
+      p1: "Formado en 2022, el dúo ha logrado posicionarse en la escena underground de Buenos Aires, presentándose en venues emblemáticos como Teatro Rojas, La Tangente, Strummer Bar, El Emergente y La Manzana de las Luces.",
+      p2: "Entre sus logros destacados se encuentra haber sido teloneros de la legendaria banda Clan of Xymox en Uniclub y haber compartido escenario con \"Adicta\".",
+      p3: "\"Anguila\" sucede a su lanzamiento anterior \"Parte de Mi\" (2023) y anticipa su próximo álbum debut.",
+      p4: "",
+      p5: ""
     },
     credits: {
       members: "INTEGRANTES:",
@@ -54,16 +54,16 @@ const translations = {
       credits: "Credits"
     },
     press: {
-      p1: "The post-punk duo AUTODEFENSA announces the release of their new single \"Anguila\", available on all digital platforms starting April 4, 2025. This release anticipates their upcoming debut album, which will be released in the coming months.",
-      p2: "\"Anguila\", recorded, mixed and mastered at the legendary Estudios Panda for INVS Label, follows their previous release \"Parte de Mi\" (2023) and represents an evolution in the duo's musical proposal.",
-      p3: "In addition to the single release on April 4, AUTODEFENSA will premiere the official music video for \"Anguila\" during the same month, an audiovisual piece that complements the brutalist aesthetic that characterizes the project."
+      p1: "Post-punk duo AUTODEFENSA announces the release of \"Anguila\", recorded, mixed and mastered at the legendary Panda Studios, who consider this single \"a new anthem of post-punk, goth and coldwave genres\". Available on all digital platforms from April 4th, 2025.",
+      p2: "The production was handled by Sebastián Bertuzzi, owner of Panda Studios and recognized for elevating local music production standards to international levels, along with INVS Label. The single features artwork by Jonathan Sirit, a prominent designer in the global post-punk culture and drummer of the Barcelona-based band \"Belgrado\".",
+      p3: "The project, formed by Terror (vocals) —creator of Festival Roca Negra, Argentina's most important gothic event— and Sangre (guitar, rhythms, synthesizers), combines the intensity of post-punk with dark and electronic nuances, framed in a marked brutalist aesthetic. In addition to the single release, AUTODEFENSA will premiere the official music video during April."
     },
     about: {
-      p1: "Formed in 2022, AUTODEFENSA is a musical project comprised of Terror (vocals) and Sangre (guitar, rhythms, synthesizers) that combines the intensity of post-punk with dark and electronic nuances, creating a sonic universe where metallic and synthetic elements coexist with the organicity of live instruments.",
-      p2: "The duo's proposal is complemented by a marked brutalist aesthetic that defines both their visual and sonic identity.",
-      p3: "In their short two-year career, the band has managed to position themselves as a standout proposal within Buenos Aires' underground scene, performing at emblematic venues such as La Tangente, Strummer Bar, El Emergente, La Manzana de las Luces, and Teatro Rojas.",
-      p4: "Among their most notable achievements is having been the opening act for the legendary band Clan of Xymox at Uniclub.",
-      p5: "Their upcoming debut album promises to consolidate AUTODEFENSA's musical proposal and establish them as one of the most interesting bands in the local post-punk/darkwave circuit."
+      p1: "Formed in 2022, the duo has managed to position themselves in the underground scene of Buenos Aires, performing at iconic venues such as Teatro Rojas, La Tangente, Strummer Bar, El Emergente and La Manzana de las Luces.",
+      p2: "Among their notable achievements are opening for the legendary band Clan of Xymox at Uniclub and sharing the stage with \"Adicta\".",
+      p3: "\"Anguila\" follows their previous release \"Parte de Mi\" (2023) and anticipates their upcoming debut album.",
+      p4: "",
+      p5: ""
     },
     credits: {
       members: "MEMBERS:",
