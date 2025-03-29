@@ -22,7 +22,7 @@ const translations = {
     },
     about: {
       p1: "Formado en 2022, el dúo ha logrado posicionarse en la escena underground de Buenos Aires, presentándose en venues emblemáticos como Teatro Rojas, La Tangente, Strummer Bar, El Emergente y La Manzana de las Luces.",
-      p2: "Entre sus logros destacados se encuentra haber sido teloneros de la legendaria banda Clan of Xymox en Uniclub y haber compartido escenario con \"Adicta\".",
+      p2: "Entre sus logros destacados se encuentra haber sido teloneros de la legendaria banda Clan of Xymox en Uniclub.",
       p3: "\"Anguila\" sucede a su lanzamiento anterior \"Parte de Mi\" (2023) y anticipa su próximo álbum debut.",
       p4: "",
       p5: ""
@@ -60,7 +60,7 @@ const translations = {
     },
     about: {
       p1: "Formed in 2022, the duo has managed to position themselves in the underground scene of Buenos Aires, performing at iconic venues such as Teatro Rojas, La Tangente, Strummer Bar, El Emergente and La Manzana de las Luces.",
-      p2: "Among their notable achievements are opening for the legendary band Clan of Xymox at Uniclub and sharing the stage with \"Adicta\".",
+      p2: "Among their notable achievements are opening for the legendary band Clan of Xymox at Uniclub.",
       p3: "\"Anguila\" follows their previous release \"Parte de Mi\" (2023) and anticipates their upcoming debut album.",
       p4: "",
       p5: ""
