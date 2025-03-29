@@ -16,9 +16,9 @@ const translations = {
       credits: "Créditos"
     },
     press: {
-      p1: "El dúo post-punk AUTODEFENSA anuncia el lanzamiento de \"Anguila\", grabado, mezclado y masterizado en los míticos Estudios Panda, quienes consideran este single \"un nuevo himno del género post-punk, goth y coldwave\". Disponible en todas las plataformas digitales a partir del 4 de abril de 2025.",
-      p2: "La producción estuvo a cargo de Sebastián Bertuzzi, propietario de Estudios Panda y reconocido por elevar los estándares de producción musical local a niveles internacionales, junto a INVS Label. El single cuenta con el arte de Jonathan Sirit, diseñador destacado en la cultura mundial del post-punk y baterista de la banda barcelonesa \"Belgrado\".",
-      p3: "El proyecto, integrado por Terror (voz) —creador del Festival Roca Negra, el evento gótico más importante de Argentina— y Sangre (guitarra, ritmos, sintetizadores), combina la intensidad del post-punk con matices oscuros y electrónicos, enmarcados en una marcada estética brutalista. Además del lanzamiento del single, AUTODEFENSA estrenará el videoclip oficial durante abril."
+      p1: "El dúo post-punk AUTODEFENSA lanza \"Anguila\" el 4 de abril de 2025. Grabado en los míticos Estudios Panda, quienes lo consideran \"un nuevo himno del género post-punk\", el single fue producido por Sebastián Bertuzzi (propietario del estudio) junto a INVS Label y cuenta con arte de Jonathan Sirit (diseñador destacado y baterista de \"Belgrado\").",
+      p2: "Terror (voz) —creador del Festival Roca Negra— y Sangre (guitarra/sintetizadores) combinan sonidos fríos y orgánicos con estética brutalista. El videoclip oficial se estrenará en abril.",
+      p3: "La banda, formada en 2022, ha teloneado a Clan of Xymox y tocado en Teatro Rojas, La Tangente y otros venues destacados."
     },
     about: {
       p1: "Formado en 2022, el dúo ha logrado posicionarse en la escena underground de Buenos Aires, presentándose en venues emblemáticos como Teatro Rojas, La Tangente, Strummer Bar, El Emergente y La Manzana de las Luces.",
@@ -54,9 +54,9 @@ const translations = {
       credits: "Credits"
     },
     press: {
-      p1: "Post-punk duo AUTODEFENSA announces the release of \"Anguila\", recorded, mixed and mastered at the legendary Panda Studios, who consider this single \"a new anthem of post-punk, goth and coldwave genres\". Available on all digital platforms from April 4th, 2025.",
-      p2: "The production was handled by Sebastián Bertuzzi, owner of Panda Studios and recognized for elevating local music production standards to international levels, along with INVS Label. The single features artwork by Jonathan Sirit, a prominent designer in the global post-punk culture and drummer of the Barcelona-based band \"Belgrado\".",
-      p3: "The project, formed by Terror (vocals) —creator of Festival Roca Negra, Argentina's most important gothic event— and Sangre (guitar, rhythms, synthesizers), combines the intensity of post-punk with dark and electronic nuances, framed in a marked brutalist aesthetic. In addition to the single release, AUTODEFENSA will premiere the official music video during April."
+      p1: "Post-punk duo AUTODEFENSA releases \"Anguila\" on April 4th, 2025. Recorded at the legendary Panda Studios, who consider it \"a new anthem of the post-punk genre\", the single was produced by Sebastián Bertuzzi (studio owner) along with INVS Label and features artwork by Jonathan Sirit (prominent designer and drummer of \"Belgrado\").",
+      p2: "Terror (vocals) —creator of Festival Roca Negra— and Sangre (guitar/synthesizers) combine cold and organic sounds with brutalist aesthetics. The official music video will premiere in April.",
+      p3: "The band, formed in 2022, has opened for Clan of Xymox and performed at Teatro Rojas, La Tangente and other notable venues."
     },
     about: {
       p1: "Formed in 2022, the duo has managed to position themselves in the underground scene of Buenos Aires, performing at iconic venues such as Teatro Rojas, La Tangente, Strummer Bar, El Emergente and La Manzana de las Luces.",
