@@ -28,13 +28,14 @@ const translations = {
       p5: "Su próximo álbum debut promete consolidar la propuesta musical de AUTODEFENSA y establecerlos como una de las bandas más interesantes del circuito post-punk/darkwave local."
     },
     credits: {
-      members: "Integrantes:",
-      sang: "Sangre - Guitarra, ritmos, sintetizadores",
-      terror: "Terror - Voz",
-      technical: "Créditos técnicos:",
-      prod: "PROD, MIX & MASTER: Sebastián Bertuzzi",
-      rec: "REC & MASTER: Leo López",
-      mix: "MIX & MASTER: Christian Algarañaz"
+      members: "INTEGRANTES:",
+      terror: "TERROR - VOZ",
+      sang: "SANGRE - GUITARRA, RITMOS, SINTETIZADORES",
+      technical: "CRÉDITOS TÉCNICOS:",
+      prod: "PROD, MIX & MASTER: SEBASTIÁN BERTUZZI",
+      rec: "REC & MASTER: LEO LÓPEZ",
+      mix: "MIX & MASTER: CHRISTIAN ALGARAÑAZ",
+      cover: "ARTE DE TAPA: JONATHAN SIRIT"
     },
     contact: {
       title: "Contacto de prensa",
@@ -65,13 +66,14 @@ const translations = {
       p5: "Their upcoming debut album promises to consolidate AUTODEFENSA's musical proposal and establish them as one of the most interesting bands in the local post-punk/darkwave circuit."
     },
     credits: {
-      members: "Members:",
-      sang: "Sangre - Guitar, rhythms, synthesizers",
-      terror: "Terror - Vocals",
-      technical: "Technical Credits:",
-      prod: "PROD, MIX & MASTER: Sebastián Bertuzzi",
-      rec: "REC & MASTER: Leo López",
-      mix: "MIX & MASTER: Christian Algarañaz"
+      members: "MEMBERS:",
+      terror: "TERROR - VOCALS",
+      sang: "SANGRE - GUITAR, RHYTHMS, SYNTHESIZERS",
+      technical: "TECHNICAL CREDITS:",
+      prod: "PROD, MIX & MASTER: SEBASTIÁN BERTUZZI",
+      rec: "REC & MASTER: LEO LÓPEZ",
+      mix: "MIX & MASTER: CHRISTIAN ALGARAÑAZ",
+      cover: "COVER ART: JONATHAN SIRIT"
     },
     contact: {
       title: "Press Contact",
@@ -129,13 +131,15 @@ ${t.about.p5}
 CRÉDITOS
 --------
 ${t.credits.members}
-${t.credits.sang}
 ${t.credits.terror}
+${t.credits.sang}
 
 ${t.credits.technical}
 ${t.credits.prod}
 ${t.credits.rec}
 ${t.credits.mix}
+
+${t.credits.cover}
 
 CONTACTO DE PRENSA
 -----------------
@@ -165,13 +169,15 @@ ${t.about.p5}
 CREDITS
 -------
 ${t.credits.members}
-${t.credits.sang}
 ${t.credits.terror}
+${t.credits.sang}
 
 ${t.credits.technical}
 ${t.credits.prod}
 ${t.credits.rec}
 ${t.credits.mix}
+
+${t.credits.cover}
 
 PRESS CONTACT
 ------------
@@ -217,15 +223,15 @@ Email: ${t.contact.email}`;
           <div className="flex items-center gap-4">
             <button
               onClick={toggleLanguage}
-              className="flex items-center gap-2 bg-[#FF2E33] px-4 py-2 hover:bg-[#ff1a1f] transition-colors font-medium text-sm"
+              className="flex items-center gap-2 bg-[#FF2E33] px-3 py-1.5 hover:bg-[#ff1a1f] transition-colors font-medium text-xs"
             >
               {language === 'es' ? 'EN' : 'ES'}
             </button>
             <button
               onClick={handleDownload}
-              className="flex items-center gap-2 bg-[#FF2E33] px-4 py-2 hover:bg-[#ff1a1f] transition-colors font-medium text-sm"
+              className="flex items-center gap-2 bg-[#FF2E33] px-3 py-1.5 hover:bg-[#ff1a1f] transition-colors font-medium text-xs"
             >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
               </svg>
               <span>{t.pressKit}</span>
@@ -379,13 +385,14 @@ Email: ${t.contact.email}`;
 
                 {activeTab === 'credits' && (
                   <>
-                    <p className="font-bold">{t.credits.members}</p>
-                    <p>{t.credits.sang}</p>
-                    <p>{t.credits.terror}</p>
-                    <p className="font-bold mt-4">{t.credits.technical}</p>
-                    <p>{t.credits.prod}</p>
-                    <p>{t.credits.rec}</p>
-                    <p>{t.credits.mix}</p>
+                    <p className="font-bold uppercase mb-2">{t.credits.members}</p>
+                    <p className="uppercase leading-none">{t.credits.terror}</p>
+                    <p className="uppercase leading-none">{t.credits.sang}</p>
+                    <p className="font-bold mt-4 uppercase mb-2">{t.credits.technical}</p>
+                    <p className="uppercase leading-none">{t.credits.prod}</p>
+                    <p className="uppercase leading-none">{t.credits.rec}</p>
+                    <p className="uppercase leading-none">{t.credits.mix}</p>
+                    <p className="mt-4 uppercase leading-none">{t.credits.cover}</p>
                   </>
                 )}
               </div>
@@ -448,11 +455,9 @@ Email: ${t.contact.email}`;
             href="https://hypeddit.com/aa0yih"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 bg-[#FF2E33] flex items-center justify-center hover:bg-[#ff1a1f] transition-colors"
+            className="w-auto px-4 h-10 bg-[#FF2E33] flex items-center justify-center hover:bg-[#ff1a1f] transition-colors font-medium text-sm"
           >
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-12S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-            </svg>
+            PRE-SAVE
           </a>
         </div>
       </footer>
