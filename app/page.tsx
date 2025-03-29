@@ -16,8 +16,8 @@ const translations = {
       credits: "Créditos"
     },
     press: {
-      p1: "El dúo post-punk AUTODEFENSA lanza \"Anguila\" el 4 de abril de 2025. Grabado en los míticos Estudios Panda, quienes lo consideran \"un nuevo himno del género post-punk\", el single fue producido por Sebastián Bertuzzi (propietario del estudio) junto a INVS Label y cuenta con arte de Jonathan Sirit (diseñador destacado y baterista de \"Belgrado\").",
-      p2: "Terror (voz) —creador del Festival Roca Negra— y Sangre (guitarra/sintetizadores) combinan sonidos fríos y orgánicos con estética brutalista. El videoclip oficial se estrenará en abril.",
+      p1: "El dúo post-punk AUTODEFENSA lanza \"Anguila\" el 4 de abril de 2025. Grabado en los míticos <strong>ESTUDIOS PANDA</strong>, quienes lo consideran \"un nuevo himno del género post-punk\", el single fue producido por <strong>SEBASTIÁN BERTUZZI</strong> (propietario del estudio) junto a INVS Label y cuenta con arte de <strong>JONATHAN SIRIT</strong> (diseñador destacado y baterista de \"Belgrado\").",
+      p2: "<strong>TERROR</strong> (voz) —creador del Festival Roca Negra— y <strong>SANGRE</strong> (guitarra/sintetizadores) combinan sonidos fríos y orgánicos con estética brutalista. El videoclip oficial se estrenará en abril.",
       p3: "La banda, formada en 2022, ha teloneado a Clan of Xymox y tocado en Teatro Rojas, La Tangente y otros venues destacados."
     },
     about: {
@@ -54,8 +54,8 @@ const translations = {
       credits: "Credits"
     },
     press: {
-      p1: "Post-punk duo AUTODEFENSA releases \"Anguila\" on April 4th, 2025. Recorded at the legendary Panda Studios, who consider it \"a new anthem of the post-punk genre\", the single was produced by Sebastián Bertuzzi (studio owner) along with INVS Label and features artwork by Jonathan Sirit (prominent designer and drummer of \"Belgrado\").",
-      p2: "Terror (vocals) —creator of Festival Roca Negra— and Sangre (guitar/synthesizers) combine cold and organic sounds with brutalist aesthetics. The official music video will premiere in April.",
+      p1: "Post-punk duo AUTODEFENSA releases \"Anguila\" on April 4th, 2025. Recorded at the legendary <strong>PANDA STUDIOS</strong>, who consider it \"a new anthem of the post-punk genre\", the single was produced by <strong>SEBASTIÁN BERTUZZI</strong> (studio owner) along with INVS Label and features artwork by <strong>JONATHAN SIRIT</strong> (prominent designer and drummer of \"Belgrado\").",
+      p2: "<strong>TERROR</strong> (vocals) —creator of Festival Roca Negra— and <strong>SANGRE</strong> (guitar/synthesizers) combine cold and organic sounds with brutalist aesthetics. The official music video will premiere in April.",
       p3: "The band, formed in 2022, has opened for Clan of Xymox and performed at Teatro Rojas, La Tangente and other notable venues."
     },
     about: {
@@ -314,9 +314,9 @@ Email: ${t.contact.email}`;
               <div className="space-y-3 text-base h-[300px] overflow-y-auto pr-2">
                 {activeTab === 'press' && (
                   <>
-                    <p>{t.press.p1}</p>
-                    <p>{t.press.p2}</p>
-                    <p>{t.press.p3}</p>
+                    <p dangerouslySetInnerHTML={{ __html: t.press.p1 }} />
+                    <p dangerouslySetInnerHTML={{ __html: t.press.p2 }} />
+                    <p dangerouslySetInnerHTML={{ __html: t.press.p3 }} />
                   </>
                 )}
 
