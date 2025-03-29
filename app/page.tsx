@@ -16,7 +16,7 @@ const translations = {
       credits: "Créditos"
     },
     press: {
-      p1: "El dúo post-punk <strong>AUTODEFENSA</strong> lanza \"Anguila\" el 4 de abril de 2025. Grabado en los míticos <strong>ESTUDIOS PANDA</strong>, quienes lo consideran \"un nuevo himno del género post-punk\", el single fue producido por <strong>SEBASTIÁN BERTUZZI</strong> (propietario del estudio), editado por INVS Label y cuenta con arte de tapa de <strong>JONATHAN SIRIT</strong> (diseñador destacado y baterista de \"Belgrado\").",
+      p1: "El dúo post-punk <strong>AUTODEFENSA</strong> lanza \"Anguila\" el 4 de abril de 2025. Grabado en los míticos <a href=\"https://estudiospanda.com.ar/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>ESTUDIOS PANDA</strong></a>, quienes lo consideran \"un nuevo himno del género post-punk\", el single fue producido por <a href=\"https://www.lanacion.com.ar/economia/negocios/fabrica-de-hits-quien-es-el-nuevo-dueno-de-estudios-panda-nid23092022/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>SEBASTIÁN BERTUZZI</strong></a> (propietario del estudio), editado por INVS Label y cuenta con arte de tapa de <a href=\"https://www.instagram.com/jonathan_sirit/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>JONATHAN SIRIT</strong></a> (diseñador destacado y baterista de <a href=\"https://www.instagram.com/belgradoband/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\">\"Belgrado\"</a>).",
       p2: "<strong>TERROR</strong> (voz) —creador del Festival Roca Negra— y <strong>SANGRE</strong> (guitarra/sintetizadores) combinan sonidos fríos y orgánicos con estética brutalista. El videoclip oficial se estrenará en abril. La banda, formada en 2022, ha teloneado a Clan of Xymox y tocado en Teatro Rojas, La Tangente y otros venues destacados.",
       p3: ""
     },
@@ -54,7 +54,7 @@ const translations = {
       credits: "Credits"
     },
     press: {
-      p1: "Post-punk duo <strong>AUTODEFENSA</strong> releases \"Anguila\" on April 4th, 2025. Recorded at the legendary <strong>PANDA STUDIOS</strong>, who consider it \"a new anthem of the post-punk genre\", the single was produced by <strong>SEBASTIÁN BERTUZZI</strong> (studio owner), edited by INVS Label and features cover art by <strong>JONATHAN SIRIT</strong> (prominent designer and drummer of \"Belgrado\").",
+      p1: "Post-punk duo <strong>AUTODEFENSA</strong> releases \"Anguila\" on April 4th, 2025. Recorded at the legendary <a href=\"https://estudiospanda.com.ar/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>PANDA STUDIOS</strong></a>, who consider it \"a new anthem of the post-punk genre\", the single was produced by <a href=\"https://www.lanacion.com.ar/economia/negocios/fabrica-de-hits-quien-es-el-nuevo-dueno-de-estudios-panda-nid23092022/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>SEBASTIÁN BERTUZZI</strong></a> (studio owner), edited by INVS Label and features cover art by <a href=\"https://www.instagram.com/jonathan_sirit/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>JONATHAN SIRIT</strong></a> (prominent designer and drummer of <a href=\"https://www.instagram.com/belgradoband/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\">\"Belgrado\"</a>).",
       p2: "<strong>TERROR</strong> (vocals) —creator of Festival Roca Negra— and <strong>SANGRE</strong> (guitar/synthesizers) combine cold and organic sounds with brutalist aesthetics. The official music video will premiere in April. The band, formed in 2022, has opened for Clan of Xymox and performed at Teatro Rojas, La Tangente and other notable venues.",
       p3: ""
     },
@@ -241,38 +241,40 @@ Email: ${t.contact.email}`;
       </nav>
 
       {/* Main Content */}
-      <main className="flex-1 container mx-auto px-4 flex items-center py-8 md:py-0">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+      <main className="flex-1 container mx-auto px-4 flex items-center py-8 lg:py-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 w-full">
           {/* Left Column - Cover Image */}
-          <div className="flex items-center justify-center">
-            <Image
-              src="/cover/anguila.jpg"
-              alt="Anguila Single Cover"
-              width={600}
-              height={600}
-              className="rounded-none shadow-lg"
-              priority
-            />
+          <div className="flex items-center justify-center w-full">
+            <div className="relative w-full aspect-square">
+              <Image
+                src="/cover/anguila.jpg"
+                alt="Anguila Single Cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
+              />
+            </div>
           </div>
 
           {/* Right Column - Text Content */}
-          <div className="flex flex-col h-[600px]">
+          <div className="flex flex-col h-[500px] lg:h-[600px]">
             <div className="flex flex-col h-full">
               <div className="flex flex-col h-full">
-                <div className="space-y-4">
-                  <h1 className="text-2xl md:text-3xl font-black leading-none">
+                <div className="space-y-3 lg:space-y-4">
+                  <h1 className="text-xl lg:text-2xl xl:text-3xl font-black leading-none">
                     {t.title}
                   </h1>
                   
-                  <p className="text-[#FF2E33] font-bold text-sm mb-8">
+                  <p className="text-[#FF2E33] font-bold text-sm mb-6 lg:mb-8">
                     {t.date}
                   </p>
 
                   {/* Tabs */}
-                  <div className="flex gap-4 border-b border-[#FF2E33] mb-6">
+                  <div className="flex gap-2 lg:gap-4 border-b border-[#FF2E33] mb-4 lg:mb-6">
                     <button
                       onClick={() => setActiveTab('press')}
-                      className={`px-6 py-3 font-medium transition-colors text-sm ${
+                      className={`px-4 lg:px-6 py-2 lg:py-3 font-medium transition-colors text-sm ${
                         activeTab === 'press'
                           ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
                           : 'text-[#fafafa] hover:text-[#FF2E33]'
@@ -282,7 +284,7 @@ Email: ${t.contact.email}`;
                     </button>
                     <button
                       onClick={() => setActiveTab('about')}
-                      className={`px-6 py-3 font-medium transition-colors text-sm ${
+                      className={`px-4 lg:px-6 py-2 lg:py-3 font-medium transition-colors text-sm ${
                         activeTab === 'about'
                           ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
                           : 'text-[#fafafa] hover:text-[#FF2E33]'
@@ -292,7 +294,7 @@ Email: ${t.contact.email}`;
                     </button>
                     <button
                       onClick={() => setActiveTab('photos')}
-                      className={`px-6 py-3 font-medium transition-colors text-sm ${
+                      className={`px-4 lg:px-6 py-2 lg:py-3 font-medium transition-colors text-sm ${
                         activeTab === 'photos'
                           ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
                           : 'text-[#fafafa] hover:text-[#FF2E33]'
@@ -302,7 +304,7 @@ Email: ${t.contact.email}`;
                     </button>
                     <button
                       onClick={() => setActiveTab('credits')}
-                      className={`px-6 py-3 font-medium transition-colors text-sm ${
+                      className={`px-4 lg:px-6 py-2 lg:py-3 font-medium transition-colors text-sm ${
                         activeTab === 'credits'
                           ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
                           : 'text-[#fafafa] hover:text-[#FF2E33]'
@@ -313,7 +315,7 @@ Email: ${t.contact.email}`;
                   </div>
 
                   {/* Tab Content */}
-                  <div className="space-y-4 text-base flex-1 overflow-y-auto pr-2">
+                  <div className="space-y-3 lg:space-y-4 text-sm lg:text-base flex-1 overflow-y-auto pr-2">
                     {activeTab === 'press' && (
                       <>
                         <p dangerouslySetInnerHTML={{ __html: t.press.p1 }} />
@@ -333,7 +335,7 @@ Email: ${t.contact.email}`;
                     )}
 
                     {activeTab === 'photos' && (
-                      <div className="grid grid-cols-2 gap-4 h-[300px] overflow-y-auto pr-2">
+                      <div className="grid grid-cols-2 gap-3 lg:gap-4 h-[250px] lg:h-[300px] overflow-y-auto pr-2">
                         <div 
                           className="relative aspect-square cursor-pointer"
                           onClick={() => handlePhotoClick('/pics/photo1.jpg')}
@@ -343,7 +345,7 @@ Email: ${t.contact.email}`;
                             alt="AUTODEFENSA en vivo"
                             fill
                             className="object-cover"
-                            sizes="(max-width: 768px) 50vw, 33vw"
+                            sizes="(max-width: 1024px) 50vw, 33vw"
                           />
                         </div>
                         <div 
@@ -355,7 +357,7 @@ Email: ${t.contact.email}`;
                             alt="AUTODEFENSA en estudio"
                             fill
                             className="object-cover"
-                            sizes="(max-width: 768px) 50vw, 33vw"
+                            sizes="(max-width: 1024px) 50vw, 33vw"
                           />
                         </div>
                         <div 
@@ -367,7 +369,7 @@ Email: ${t.contact.email}`;
                             alt="AUTODEFENSA en concierto"
                             fill
                             className="object-cover"
-                            sizes="(max-width: 768px) 50vw, 33vw"
+                            sizes="(max-width: 1024px) 50vw, 33vw"
                           />
                         </div>
                         <div 
@@ -379,7 +381,7 @@ Email: ${t.contact.email}`;
                             alt="AUTODEFENSA en sesión"
                             fill
                             className="object-cover"
-                            sizes="(max-width: 768px) 50vw, 33vw"
+                            sizes="(max-width: 1024px) 50vw, 33vw"
                           />
                         </div>
                       </div>
