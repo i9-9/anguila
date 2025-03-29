@@ -16,9 +16,9 @@ const translations = {
       credits: "Créditos"
     },
     press: {
-      p1: "El dúo post-punk AUTODEFENSA lanza \"Anguila\" el 4 de abril de 2025. Grabado en los míticos <strong>ESTUDIOS PANDA</strong>, quienes lo consideran \"un nuevo himno del género post-punk\", el single fue producido por <strong>SEBASTIÁN BERTUZZI</strong> (propietario del estudio) junto a INVS Label y cuenta con arte de <strong>JONATHAN SIRIT</strong> (diseñador destacado y baterista de \"Belgrado\").",
-      p2: "<strong>TERROR</strong> (voz) —creador del Festival Roca Negra— y <strong>SANGRE</strong> (guitarra/sintetizadores) combinan sonidos fríos y orgánicos con estética brutalista. El videoclip oficial se estrenará en abril.",
-      p3: "La banda, formada en 2022, ha teloneado a Clan of Xymox y tocado en Teatro Rojas, La Tangente y otros venues destacados."
+      p1: "El dúo post-punk <strong>AUTODEFENSA</strong> lanza \"Anguila\" el 4 de abril de 2025. Grabado en los míticos <strong>ESTUDIOS PANDA</strong>, quienes lo consideran \"un nuevo himno del género post-punk\", el single fue producido por <strong>SEBASTIÁN BERTUZZI</strong> (propietario del estudio), editado por INVS Label y cuenta con arte de tapa de <strong>JONATHAN SIRIT</strong> (diseñador destacado y baterista de \"Belgrado\").",
+      p2: "<strong>TERROR</strong> (voz) —creador del Festival Roca Negra— y <strong>SANGRE</strong> (guitarra/sintetizadores) combinan sonidos fríos y orgánicos con estética brutalista. El videoclip oficial se estrenará en abril. La banda, formada en 2022, ha teloneado a Clan of Xymox y tocado en Teatro Rojas, La Tangente y otros venues destacados.",
+      p3: ""
     },
     about: {
       p1: "Formado en 2022, el dúo ha logrado posicionarse en la escena underground de Buenos Aires, presentándose en venues emblemáticos como Teatro Rojas, La Tangente, Strummer Bar, El Emergente y La Manzana de las Luces.",
@@ -54,9 +54,9 @@ const translations = {
       credits: "Credits"
     },
     press: {
-      p1: "Post-punk duo AUTODEFENSA releases \"Anguila\" on April 4th, 2025. Recorded at the legendary <strong>PANDA STUDIOS</strong>, who consider it \"a new anthem of the post-punk genre\", the single was produced by <strong>SEBASTIÁN BERTUZZI</strong> (studio owner) along with INVS Label and features artwork by <strong>JONATHAN SIRIT</strong> (prominent designer and drummer of \"Belgrado\").",
-      p2: "<strong>TERROR</strong> (vocals) —creator of Festival Roca Negra— and <strong>SANGRE</strong> (guitar/synthesizers) combine cold and organic sounds with brutalist aesthetics. The official music video will premiere in April.",
-      p3: "The band, formed in 2022, has opened for Clan of Xymox and performed at Teatro Rojas, La Tangente and other notable venues."
+      p1: "Post-punk duo <strong>AUTODEFENSA</strong> releases \"Anguila\" on April 4th, 2025. Recorded at the legendary <strong>PANDA STUDIOS</strong>, who consider it \"a new anthem of the post-punk genre\", the single was produced by <strong>SEBASTIÁN BERTUZZI</strong> (studio owner), edited by INVS Label and features cover art by <strong>JONATHAN SIRIT</strong> (prominent designer and drummer of \"Belgrado\").",
+      p2: "<strong>TERROR</strong> (vocals) —creator of Festival Roca Negra— and <strong>SANGRE</strong> (guitar/synthesizers) combine cold and organic sounds with brutalist aesthetics. The official music video will premiere in April. The band, formed in 2022, has opened for Clan of Xymox and performed at Teatro Rojas, La Tangente and other notable venues.",
+      p3: ""
     },
     about: {
       p1: "Formed in 2022, the duo has managed to position themselves in the underground scene of Buenos Aires, performing at iconic venues such as Teatro Rojas, La Tangente, Strummer Bar, El Emergente and La Manzana de las Luces.",
@@ -248,179 +248,183 @@ Email: ${t.contact.email}`;
             <Image
               src="/cover/anguila.jpg"
               alt="Anguila Single Cover"
-              width={500}
-              height={500}
+              width={600}
+              height={600}
               className="rounded-none shadow-lg"
               priority
             />
           </div>
 
           {/* Right Column - Text Content */}
-          <div className="flex flex-col justify-center h-[600px]">
-            <div className="space-y-4">
-              <h1 className="text-2xl md:text-3xl font-black leading-none">
-                {t.title}
-              </h1>
-              
-              <p className="text-[#FF2E33] font-bold text-sm">
-                {t.date}
-              </p>
+          <div className="flex flex-col h-[600px]">
+            <div className="flex flex-col h-full">
+              <div className="flex flex-col h-full">
+                <div className="space-y-4">
+                  <h1 className="text-2xl md:text-3xl font-black leading-none">
+                    {t.title}
+                  </h1>
+                  
+                  <p className="text-[#FF2E33] font-bold text-sm mb-8">
+                    {t.date}
+                  </p>
 
-              {/* Tabs */}
-              <div className="flex gap-2 border-b border-[#FF2E33]">
-                <button
-                  onClick={() => setActiveTab('press')}
-                  className={`px-4 py-2 font-medium transition-colors text-sm ${
-                    activeTab === 'press'
-                      ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
-                      : 'text-[#fafafa] hover:text-[#FF2E33]'
-                  }`}
-                >
-                  {t.tabs.press}
-                </button>
-                <button
-                  onClick={() => setActiveTab('about')}
-                  className={`px-4 py-2 font-medium transition-colors text-sm ${
-                    activeTab === 'about'
-                      ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
-                      : 'text-[#fafafa] hover:text-[#FF2E33]'
-                  }`}
-                >
-                  {t.tabs.about}
-                </button>
-                <button
-                  onClick={() => setActiveTab('photos')}
-                  className={`px-4 py-2 font-medium transition-colors text-sm ${
-                    activeTab === 'photos'
-                      ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
-                      : 'text-[#fafafa] hover:text-[#FF2E33]'
-                  }`}
-                >
-                  {t.tabs.photos}
-                </button>
-                <button
-                  onClick={() => setActiveTab('credits')}
-                  className={`px-4 py-2 font-medium transition-colors text-sm ${
-                    activeTab === 'credits'
-                      ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
-                      : 'text-[#fafafa] hover:text-[#FF2E33]'
-                  }`}
-                >
-                  {t.tabs.credits}
-                </button>
-              </div>
-
-              {/* Tab Content */}
-              <div className="space-y-3 text-base h-[300px] overflow-y-auto pr-2">
-                {activeTab === 'press' && (
-                  <>
-                    <p dangerouslySetInnerHTML={{ __html: t.press.p1 }} />
-                    <p dangerouslySetInnerHTML={{ __html: t.press.p2 }} />
-                    <p dangerouslySetInnerHTML={{ __html: t.press.p3 }} />
-                  </>
-                )}
-
-                {activeTab === 'about' && (
-                  <>
-                    <p>{t.about.p1}</p>
-                    <p>{t.about.p2}</p>
-                    <p>{t.about.p3}</p>
-                    <p>{t.about.p4}</p>
-                    <p>{t.about.p5}</p>
-                  </>
-                )}
-
-                {activeTab === 'photos' && (
-                  <div className="grid grid-cols-2 gap-4">
-                    <div 
-                      className="relative aspect-square cursor-pointer"
-                      onClick={() => handlePhotoClick('/pics/photo1.jpg')}
+                  {/* Tabs */}
+                  <div className="flex gap-4 border-b border-[#FF2E33] mb-6">
+                    <button
+                      onClick={() => setActiveTab('press')}
+                      className={`px-6 py-3 font-medium transition-colors text-sm ${
+                        activeTab === 'press'
+                          ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
+                          : 'text-[#fafafa] hover:text-[#FF2E33]'
+                      }`}
                     >
-                      <Image
-                        src="/pics/photo1.jpg"
-                        alt="AUTODEFENSA en vivo"
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 50vw, 33vw"
-                      />
-                    </div>
-                    <div 
-                      className="relative aspect-square cursor-pointer"
-                      onClick={() => handlePhotoClick('/pics/photo2.jpg')}
+                      {t.tabs.press}
+                    </button>
+                    <button
+                      onClick={() => setActiveTab('about')}
+                      className={`px-6 py-3 font-medium transition-colors text-sm ${
+                        activeTab === 'about'
+                          ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
+                          : 'text-[#fafafa] hover:text-[#FF2E33]'
+                      }`}
                     >
-                      <Image
-                        src="/pics/photo2.jpg"
-                        alt="AUTODEFENSA en estudio"
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 50vw, 33vw"
-                      />
-                    </div>
-                    <div 
-                      className="relative aspect-square cursor-pointer"
-                      onClick={() => handlePhotoClick('/pics/photo3.jpg')}
+                      {t.tabs.about}
+                    </button>
+                    <button
+                      onClick={() => setActiveTab('photos')}
+                      className={`px-6 py-3 font-medium transition-colors text-sm ${
+                        activeTab === 'photos'
+                          ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
+                          : 'text-[#fafafa] hover:text-[#FF2E33]'
+                      }`}
                     >
-                      <Image
-                        src="/pics/photo3.jpg"
-                        alt="AUTODEFENSA en concierto"
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 50vw, 33vw"
-                      />
-                    </div>
-                    <div 
-                      className="relative aspect-square cursor-pointer"
-                      onClick={() => handlePhotoClick('/pics/photo4.jpg')}
+                      {t.tabs.photos}
+                    </button>
+                    <button
+                      onClick={() => setActiveTab('credits')}
+                      className={`px-6 py-3 font-medium transition-colors text-sm ${
+                        activeTab === 'credits'
+                          ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
+                          : 'text-[#fafafa] hover:text-[#FF2E33]'
+                      }`}
                     >
-                      <Image
-                        src="/pics/photo4.jpg"
-                        alt="AUTODEFENSA en sesión"
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 50vw, 33vw"
-                      />
-                    </div>
+                      {t.tabs.credits}
+                    </button>
                   </div>
-                )}
 
-                {activeTab === 'credits' && (
-                  <>
-                    <p className="font-bold uppercase mb-2">{t.credits.members}</p>
-                    <p className="uppercase leading-none">{t.credits.terror}</p>
-                    <p className="uppercase leading-none">{t.credits.sang}</p>
-                    <p className="font-bold mt-4 uppercase mb-2">{t.credits.technical}</p>
-                    <p className="uppercase leading-none">{t.credits.prod}</p>
-                    <p className="uppercase leading-none">{t.credits.rec}</p>
-                    <p className="uppercase leading-none">{t.credits.mix}</p>
-                    <p className="mt-4 uppercase leading-none">{t.credits.cover}</p>
-                  </>
-                )}
-              </div>
+                  {/* Tab Content */}
+                  <div className="space-y-4 text-base flex-1 overflow-y-auto pr-2">
+                    {activeTab === 'press' && (
+                      <>
+                        <p dangerouslySetInnerHTML={{ __html: t.press.p1 }} />
+                        <p dangerouslySetInnerHTML={{ __html: t.press.p2 }} />
+                        <p dangerouslySetInnerHTML={{ __html: t.press.p3 }} />
+                      </>
+                    )}
 
-              {/* Contact Info */}
-              <div className="mt-6 space-y-3">
-                <h2 className="text-lg font-black">{t.contact.title}</h2>
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <a
-                    href="https://wa.me/5491140753025"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 bg-[#FF2E33] px-6 py-2 hover:bg-[#ff1a1f] transition-colors font-medium text-sm"
-                  >
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.287.129.332.202.045.073.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 19.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/>
-                    </svg>
-                    <span>{t.contact.phone}</span>
-                  </a>
-                  <a
-                    href={`mailto:${t.contact.email}`}
-                    className="flex items-center justify-center gap-2 bg-[#FF2E33] px-6 py-2 hover:bg-[#ff1a1f] transition-colors font-medium text-sm"
-                  >
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                    </svg>
-                    <span>{t.contact.email}</span>
-                  </a>
+                    {activeTab === 'about' && (
+                      <>
+                        <p>{t.about.p1}</p>
+                        <p>{t.about.p2}</p>
+                        <p>{t.about.p3}</p>
+                        <p>{t.about.p4}</p>
+                        <p>{t.about.p5}</p>
+                      </>
+                    )}
+
+                    {activeTab === 'photos' && (
+                      <div className="grid grid-cols-2 gap-4 h-[300px] overflow-y-auto pr-2">
+                        <div 
+                          className="relative aspect-square cursor-pointer"
+                          onClick={() => handlePhotoClick('/pics/photo1.jpg')}
+                        >
+                          <Image
+                            src="/pics/photo1.jpg"
+                            alt="AUTODEFENSA en vivo"
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 50vw, 33vw"
+                          />
+                        </div>
+                        <div 
+                          className="relative aspect-square cursor-pointer"
+                          onClick={() => handlePhotoClick('/pics/photo2.jpg')}
+                        >
+                          <Image
+                            src="/pics/photo2.jpg"
+                            alt="AUTODEFENSA en estudio"
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 50vw, 33vw"
+                          />
+                        </div>
+                        <div 
+                          className="relative aspect-square cursor-pointer"
+                          onClick={() => handlePhotoClick('/pics/photo3.jpg')}
+                        >
+                          <Image
+                            src="/pics/photo3.jpg"
+                            alt="AUTODEFENSA en concierto"
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 50vw, 33vw"
+                          />
+                        </div>
+                        <div 
+                          className="relative aspect-square cursor-pointer"
+                          onClick={() => handlePhotoClick('/pics/photo4.jpg')}
+                        >
+                          <Image
+                            src="/pics/photo4.jpg"
+                            alt="AUTODEFENSA en sesión"
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 50vw, 33vw"
+                          />
+                        </div>
+                      </div>
+                    )}
+
+                    {activeTab === 'credits' && (
+                      <>
+                        <p className="font-bold uppercase mb-2">{t.credits.members}</p>
+                        <p className="uppercase leading-none">{t.credits.terror}</p>
+                        <p className="uppercase leading-none">{t.credits.sang}</p>
+                        <p className="font-bold mt-4 uppercase mb-2">{t.credits.technical}</p>
+                        <p className="uppercase leading-none">{t.credits.prod}</p>
+                        <p className="uppercase leading-none">{t.credits.rec}</p>
+                        <p className="uppercase leading-none">{t.credits.mix}</p>
+                        <p className="mt-4 uppercase leading-none">{t.credits.cover}</p>
+                      </>
+                    )}
+                  </div>
+                </div>
+
+                {/* Contact Info */}
+                <div className="mt-auto space-y-3">
+                  <h2 className="text-lg font-black">{t.contact.title}</h2>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <a
+                      href="https://wa.me/5491140753025"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 bg-[#FF2E33] px-6 py-2 hover:bg-[#ff1a1f] transition-colors font-medium text-sm"
+                    >
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.287.129.332.202.045.073.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 19.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/>
+                      </svg>
+                      <span>{t.contact.phone}</span>
+                    </a>
+                    <a
+                      href={`mailto:${t.contact.email}`}
+                      className="flex items-center justify-center gap-2 bg-[#FF2E33] px-6 py-2 hover:bg-[#ff1a1f] transition-colors font-medium text-sm"
+                    >
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                      </svg>
+                      <span>{t.contact.email}</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
