@@ -276,10 +276,10 @@ Email: ${t.contact.email}`;
                   </p>
 
                   {/* Tabs */}
-                  <div className="flex gap-2 lg:gap-4 border-b border-[#FF2E33] mb-4 lg:mb-6">
+                  <div className="flex flex-wrap gap-1 lg:gap-4 border-b border-[#FF2E33] mb-4 lg:mb-6">
                     <button
                       onClick={() => setActiveTab('press')}
-                      className={`px-4 lg:px-6 py-2 lg:py-3 font-medium transition-colors text-sm ${
+                      className={`px-2 lg:px-6 py-1.5 lg:py-3 font-medium transition-colors text-xs lg:text-sm ${
                         activeTab === 'press'
                           ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
                           : 'text-[#fafafa] hover:text-[#FF2E33]'
@@ -289,7 +289,7 @@ Email: ${t.contact.email}`;
                     </button>
                     <button
                       onClick={() => setActiveTab('about')}
-                      className={`px-4 lg:px-6 py-2 lg:py-3 font-medium transition-colors text-sm ${
+                      className={`px-2 lg:px-6 py-1.5 lg:py-3 font-medium transition-colors text-xs lg:text-sm ${
                         activeTab === 'about'
                           ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
                           : 'text-[#fafafa] hover:text-[#FF2E33]'
@@ -299,7 +299,7 @@ Email: ${t.contact.email}`;
                     </button>
                     <button
                       onClick={() => setActiveTab('photos')}
-                      className={`px-4 lg:px-6 py-2 lg:py-3 font-medium transition-colors text-sm ${
+                      className={`px-2 lg:px-6 py-1.5 lg:py-3 font-medium transition-colors text-xs lg:text-sm ${
                         activeTab === 'photos'
                           ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
                           : 'text-[#fafafa] hover:text-[#FF2E33]'
@@ -309,7 +309,7 @@ Email: ${t.contact.email}`;
                     </button>
                     <button
                       onClick={() => setActiveTab('credits')}
-                      className={`px-4 lg:px-6 py-2 lg:py-3 font-medium transition-colors text-sm ${
+                      className={`px-2 lg:px-6 py-1.5 lg:py-3 font-medium transition-colors text-xs lg:text-sm ${
                         activeTab === 'credits'
                           ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
                           : 'text-[#fafafa] hover:text-[#FF2E33]'
