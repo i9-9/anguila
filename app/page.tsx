@@ -208,7 +208,7 @@ Email: ${t.contact.email}`;
   };
 
   return (
-    <div className="h-screen bg-[#0d0d0d] text-[#fafafa] flex flex-col">
+    <div className="min-h-screen bg-[#0d0d0d] text-[#fafafa] flex flex-col">
       {/* Navbar */}
       <nav className="w-full border-b border-[#FF2E33] py-4">
         <div className="container mx-auto px-4 flex justify-between items-center">
@@ -241,8 +241,8 @@ Email: ${t.contact.email}`;
       </nav>
 
       {/* Main Content */}
-      <main className="flex-1 container mx-auto px-4 flex items-center py-8 lg:py-0">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 w-full">
+      <main className="flex-1 container mx-auto px-4 overflow-y-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 w-full py-8 lg:py-0">
           {/* Left Column - Cover Image */}
           <div className="flex items-center justify-center w-full">
             <div className="relative w-full aspect-square">
@@ -258,7 +258,7 @@ Email: ${t.contact.email}`;
           </div>
 
           {/* Right Column - Text Content */}
-          <div className="flex flex-col h-[500px] lg:h-[600px]">
+          <div className="flex flex-col min-h-[500px] lg:min-h-[600px]">
             <div className="flex flex-col h-full">
               <div className="flex flex-col h-full">
                 <div className="space-y-3 lg:space-y-4">
