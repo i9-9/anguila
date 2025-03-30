@@ -246,8 +246,8 @@ Email: ${t.contact.email}`;
       </nav>
 
       {/* Main Content */}
-      <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 overflow-y-auto pt-[120px] lg:pt-0">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 w-full py-4 lg:py-8 max-w-7xl mx-auto">
+      <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 overflow-y-auto overflow-x-hidden pt-[120px] lg:pt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 w-full py-4 lg:py-5 max-w-7xl mx-auto">
           {/* Left Column - Cover Image */}
           <div className="flex items-center justify-center w-full">
             <div className="relative w-full aspect-square">
