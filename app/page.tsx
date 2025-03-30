@@ -210,26 +210,31 @@ Email: ${t.contact.email}`;
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-[#fafafa] flex flex-col overflow-x-hidden">
       {/* Navbar */}
-      <nav className="w-full border-b border-[#FF2E33] py-4">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <Image
-            src="/logo/logo.svg"
-            alt="Autodefensa Logo"
-            width={200}
-            height={50}
-            priority
-            className="brightness-0 invert w-[200px]"
-          />
-          <div className="flex items-center gap-2 sm:gap-4">
+      <nav className="w-full border-b border-[#FF2E33] py-4 fixed lg:relative top-0 left-0 right-0 bg-[#0d0d0d] z-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center gap-4 lg:gap-0">
+          {/* Logo - Bottom on mobile, left on desktop */}
+          <div className="flex justify-center lg:justify-start">
+            <Image
+              src="/logo/logo.svg"
+              alt="Autodefensa Logo"
+              width={250}
+              height={50}
+              priority
+              className="brightness-0 invert w-[250px]"
+            />
+          </div>
+
+          {/* Buttons - Top on mobile, right on desktop */}
+          <div className="flex items-center justify-center lg:justify-end w-full lg:w-auto gap-2 sm:gap-4">
             <button
               onClick={toggleLanguage}
-              className="flex items-center gap-1 bg-[#FF2E33] px-2 sm:px-3 py-1 sm:py-1.5 hover:bg-[#ff1a1f] transition-colors font-medium text-xs sm:text-sm"
+              className="flex items-center justify-center gap-1 bg-[#FF2E33] px-2 sm:px-3 py-1 sm:py-1.5 hover:bg-[#ff1a1f] transition-colors font-medium text-xs sm:text-sm w-1/2 lg:w-auto"
             >
               {language === 'es' ? 'EN' : 'ES'}
             </button>
             <button
               onClick={handleDownload}
-              className="flex items-center gap-1 bg-[#FF2E33] px-2 sm:px-3 py-1 sm:py-1.5 hover:bg-[#ff1a1f] transition-colors font-medium text-xs sm:text-sm"
+              className="flex items-center justify-center gap-1 bg-[#FF2E33] px-2 sm:px-3 py-1 sm:py-1.5 hover:bg-[#ff1a1f] transition-colors font-medium text-xs sm:text-sm w-1/2 lg:w-auto"
             >
               <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
@@ -241,8 +246,8 @@ Email: ${t.contact.email}`;
       </nav>
 
       {/* Main Content */}
-      <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 overflow-y-auto pt-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 w-full py-8 lg:py-8 max-w-7xl mx-auto">
+      <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 overflow-y-auto pt-[120px] lg:pt-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 w-full py-4 lg:py-8 max-w-7xl mx-auto">
           {/* Left Column - Cover Image */}
           <div className="flex items-center justify-center w-full">
             <div className="relative w-full aspect-square">
