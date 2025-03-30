@@ -17,7 +17,7 @@ const translations = {
     },
     press: {
       p1: "El dúo post-punk <strong>AUTODEFENSA</strong> lanza \"Anguila\" el 4 de abril de 2025. Grabado en los míticos <a href=\"https://estudiospanda.com.ar/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>ESTUDIOS PANDA</strong></a>, quienes lo consideran \"un nuevo himno del género post-punk\", el single fue producido por <a href=\"https://www.lanacion.com.ar/economia/negocios/fabrica-de-hits-quien-es-el-nuevo-dueno-de-estudios-panda-nid23092022/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>SEBASTIÁN BERTUZZI</strong></a> (propietario del estudio), editado por INVS Label y cuenta con arte de <a href=\"https://www.instagram.com/jonathan_sirit/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>JONATHAN SIRIT</strong></a> (diseñador destacado conocido por crear la identidad visual de Molchat Doma y baterista de <a href=\"https://www.instagram.com/belgradoband/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\">\"Belgrado\"</a>).",
-      p2: "<strong>TERROR</strong> (voz) —creador del Festival Roca Negra— y <strong>SANGRE</strong> (guitarra/sintetizadores) combinan sonidos fríos y orgánicos con estética brutalista. El videoclip oficial se estrenará en abril. La banda, formada en 2022, ha teloneado a Clan of Xymox y tocado en Teatro Rojas, La Tangente y otros venues destacados.",
+      p2: "<strong>TERROR</strong> (voz) —creador del Festival Roca Negra, el evento más importante del género post-punk en Buenos Aires— y <strong>SANGRE</strong> (guitarra/sintetizadores) combinan sonidos fríos y orgánicos con estética brutalista. El videoclip oficial se estrenará en abril. La banda, formada en 2022, ha teloneado a Clan of Xymox y tocado en Teatro Rojas, La Tangente y otros venues destacados.",
       p3: ""
     },
     about: {
@@ -276,10 +276,10 @@ Email: ${t.contact.email}`;
                   </p>
 
                   {/* Tabs */}
-                  <div className="flex flex-wrap gap-1 lg:gap-4 border-b border-[#FF2E33] mb-4 lg:mb-6">
+                  <div className="flex gap-2 lg:gap-4 border-b border-[#FF2E33] mb-4 lg:mb-6">
                     <button
                       onClick={() => setActiveTab('press')}
-                      className={`px-2 lg:px-6 py-1.5 lg:py-3 font-medium transition-colors text-xs lg:text-sm ${
+                      className={`px-4 lg:px-6 py-2 lg:py-3 font-medium transition-colors text-sm ${
                         activeTab === 'press'
                           ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
                           : 'text-[#fafafa] hover:text-[#FF2E33]'
@@ -289,7 +289,7 @@ Email: ${t.contact.email}`;
                     </button>
                     <button
                       onClick={() => setActiveTab('about')}
-                      className={`px-2 lg:px-6 py-1.5 lg:py-3 font-medium transition-colors text-xs lg:text-sm ${
+                      className={`px-4 lg:px-6 py-2 lg:py-3 font-medium transition-colors text-sm ${
                         activeTab === 'about'
                           ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
                           : 'text-[#fafafa] hover:text-[#FF2E33]'
@@ -299,7 +299,7 @@ Email: ${t.contact.email}`;
                     </button>
                     <button
                       onClick={() => setActiveTab('photos')}
-                      className={`px-2 lg:px-6 py-1.5 lg:py-3 font-medium transition-colors text-xs lg:text-sm ${
+                      className={`px-4 lg:px-6 py-2 lg:py-3 font-medium transition-colors text-sm ${
                         activeTab === 'photos'
                           ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
                           : 'text-[#fafafa] hover:text-[#FF2E33]'
@@ -309,7 +309,7 @@ Email: ${t.contact.email}`;
                     </button>
                     <button
                       onClick={() => setActiveTab('credits')}
-                      className={`px-2 lg:px-6 py-1.5 lg:py-3 font-medium transition-colors text-xs lg:text-sm ${
+                      className={`px-4 lg:px-6 py-2 lg:py-3 font-medium transition-colors text-sm ${
                         activeTab === 'credits'
                           ? 'text-[#FF2E33] border-b-2 border-[#FF2E33]'
                           : 'text-[#fafafa] hover:text-[#FF2E33]'
