@@ -208,10 +208,10 @@ Email: ${t.contact.email}`;
   };
 
   return (
-    <div className="min-h-screen bg-[#0d0d0d] text-[#fafafa] flex flex-col">
+    <div className="min-h-screen bg-[#0d0d0d] text-[#fafafa] flex flex-col overflow-x-hidden">
       {/* Navbar */}
       <nav className="w-full border-b border-[#FF2E33] py-4">
-        <div className="container mx-auto px-4 flex justify-between items-center">
+        <div className="container mx-auto px-2 sm:px-4 flex justify-between items-center">
           <Image
             src="/logo/logo.svg"
             alt="Autodefensa Logo"
@@ -241,8 +241,8 @@ Email: ${t.contact.email}`;
       </nav>
 
       {/* Main Content */}
-      <main className="flex-1 container mx-auto px-4 overflow-y-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 w-full py-8 lg:py-0">
+      <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 overflow-y-auto pt-8 lg:pt-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 w-full py-8 lg:py-0 max-w-7xl mx-auto">
           {/* Left Column - Cover Image */}
           <div className="flex items-center justify-center w-full">
             <div className="relative w-full aspect-square">
@@ -315,7 +315,7 @@ Email: ${t.contact.email}`;
                   </div>
 
                   {/* Tab Content */}
-                  <div className="space-y-3 lg:space-y-4 text-sm lg:text-base flex-1 overflow-y-auto pr-2">
+                  <div className="space-y-3 lg:space-y-4 text-sm lg:text-base flex-1 overflow-y-auto pr-1 sm:pr-2">
                     {activeTab === 'press' && (
                       <>
                         <p dangerouslySetInnerHTML={{ __html: t.press.p1 }} />
@@ -335,7 +335,7 @@ Email: ${t.contact.email}`;
                     )}
 
                     {activeTab === 'photos' && (
-                      <div className="grid grid-cols-2 gap-3 lg:gap-4 h-[250px] lg:h-[300px] overflow-y-auto pr-2">
+                      <div className="grid grid-cols-2 gap-2 sm:gap-3 lg:gap-4 h-[250px] lg:h-[300px] overflow-y-auto pr-1 sm:pr-2">
                         <div 
                           className="relative aspect-square cursor-pointer"
                           onClick={() => handlePhotoClick('/pics/photo1.jpg')}
@@ -436,7 +436,7 @@ Email: ${t.contact.email}`;
 
       {/* Footer */}
       <footer className="w-full border-t border-[#FF2E33] py-4">
-        <div className="container mx-auto px-4 flex justify-center items-center gap-6">
+        <div className="container mx-auto px-2 sm:px-4 flex justify-center items-center gap-4 sm:gap-6">
           <a
             href="https://www.instagram.com/autodefensa__/"
             target="_blank"
