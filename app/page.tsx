@@ -211,27 +211,27 @@ Email: ${t.contact.email}`;
     <div className="min-h-screen bg-[#0d0d0d] text-[#fafafa] flex flex-col overflow-x-hidden">
       {/* Navbar */}
       <nav className="w-full border-b border-[#FF2E33] py-4">
-        <div className="container mx-auto px-2 sm:px-4 flex justify-between items-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <Image
             src="/logo/logo.svg"
             alt="Autodefensa Logo"
             width={200}
             height={50}
             priority
-            className="brightness-0 invert"
+            className="brightness-0 invert w-[200px]"
           />
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             <button
               onClick={toggleLanguage}
-              className="flex items-center gap-2 bg-[#FF2E33] px-3 py-1.5 hover:bg-[#ff1a1f] transition-colors font-medium text-xs"
+              className="flex items-center gap-1 bg-[#FF2E33] px-2 sm:px-3 py-1 sm:py-1.5 hover:bg-[#ff1a1f] transition-colors font-medium text-xs sm:text-sm"
             >
               {language === 'es' ? 'EN' : 'ES'}
             </button>
             <button
               onClick={handleDownload}
-              className="flex items-center gap-2 bg-[#FF2E33] px-3 py-1.5 hover:bg-[#ff1a1f] transition-colors font-medium text-xs"
+              className="flex items-center gap-1 bg-[#FF2E33] px-2 sm:px-3 py-1 sm:py-1.5 hover:bg-[#ff1a1f] transition-colors font-medium text-xs sm:text-sm"
             >
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
               </svg>
               <span>{t.pressKit}</span>
