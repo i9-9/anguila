@@ -16,12 +16,12 @@ const translations = {
       credits: "Créditos"
     },
     press: {
-      p1: "El dúo post-punk <strong>AUTODEFENSA</strong> lanza \"Anguila\" el 4 de abril de 2025. Grabado en los míticos <a href=\"https://estudiospanda.com.ar/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>ESTUDIOS PANDA</strong></a>, quienes lo consideran \"un nuevo himno del género post-punk\", el single fue producido por <a href=\"https://www.lanacion.com.ar/economia/negocios/fabrica-de-hits-quien-es-el-nuevo-dueno-de-estudios-panda-nid23092022/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>SEBASTIÁN BERTUZZI</strong></a> (propietario del estudio), editado por INVS Label y cuenta con arte de <a href=\"https://www.instagram.com/jonathan_sirit/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>JONATHAN SIRIT</strong></a> (diseñador destacado conocido por crear la identidad visual de Molchat Doma y baterista de <a href=\"https://www.instagram.com/belgradoband/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\">\"Belgrado\"</a>).",
-      p2: "<strong>TERROR</strong> (voz) —creador del Festival Roca Negra, el evento más importante del género post-punk en Buenos Aires— y <strong>SANGRE</strong> (guitarra/sintetizadores) combinan sonidos fríos y orgánicos con estética brutalista. El videoclip oficial se estrenará en abril. La banda, formada en 2022, ha teloneado a Clan of Xymox y tocado en Teatro Rojas, La Tangente y otros venues destacados.",
+      p1: "El dúo post-punk <strong>AUTODEFENSA</strong> lanza <strong>Anguila</strong> el 4 de abril de 2025, una pieza que lleva el género a su máxima expresión. Grabado en <a href=\"https://estudiospanda.com.ar/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>ESTUDIOS PANDA</strong></a>, uno de los mejores estudios de Latinoamérica, quienes lo consideran \"un nuevo himno del género post-punk\", el single fue producido por <a href=\"https://www.lanacion.com.ar/economia/negocios/fabrica-de-hits-quien-es-el-nuevo-dueno-de-estudios-panda-nid23092022/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>SEBASTIÁN BERTUZZI</strong></a>, referente en la producción y dueño del estudio. Con un sonido que alcanza estándares internacionales y perfecciona su esencia oscura y meticulosa, <strong>Anguila</strong> se edita bajo INVS Label y cuenta con arte de <a href=\"https://www.instagram.com/jonathan_sirit/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>JONATHAN SIRIT</strong></a>—diseñador detrás de la identidad visual de Molchat Doma y baterista de <a href=\"https://www.instagram.com/belgradoband/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\">Belgrado</a>—. Por todas estas razones y más, <strong>Anguila</strong> reune todos los factores necesarios para volverse una de las canciones más relevantes en la historia del post-punk latinoamericano.",
+      p2: "<strong>TERROR</strong> (voz) —creador del Festival Roca Negra, el evento más importante del género post-punk en Buenos Aires— y <strong>SANGRE</strong> (guitarra, ritmos, sintetizadores) combinan sonidos fríos y orgánicos con estética brutalista. El videoclip oficial se estrenará en abril. Con solo 2 años de actividad la banda ya ha logrado telonear a Clan of Xymox, una de las agrupaciones más destacadas en la historia de la música gótica además de tener shows en Teatro Rojas, La Tangente y muchos más venues destacados.",
       p3: ""
     },
     about: {
-      p1: "Formado en 2022, el dúo ha logrado posicionarse en la escena underground de Buenos Aires, presentándose en venues emblemáticos como Teatro Rojas, La Tangente, Strummer Bar, El Emergente y La Manzana de las Luces.",
+      p1: "Formado en 2023, el dúo ha logrado posicionarse en la escena underground de Buenos Aires, presentándose en venues emblemáticos como Teatro Rojas, La Tangente, Strummer Bar, El Emergente y La Manzana de las Luces.",
       p2: "Entre sus logros destacados se encuentra haber sido teloneros de la legendaria banda Clan of Xymox en Uniclub.",
       p3: "\"Anguila\" sucede a su lanzamiento anterior \"Parte de Mi\" (2023) y anticipa su próximo álbum debut.",
       p4: "",
@@ -35,7 +35,8 @@ const translations = {
       prod: "PROD, MIX & MASTER: SEBASTIÁN BERTUZZI",
       rec: "REC & MASTER: LEO LÓPEZ",
       mix: "MIX & MASTER: CHRISTIAN ALGARAÑAZ",
-      cover: "ARTE DE TAPA: JONATHAN SIRIT"
+      cover: "ARTE DE TAPA: JONATHAN SIRIT",
+      bass: "MICK - BAJO"
     },
     contact: {
       title: "Contacto de prensa",
@@ -54,12 +55,12 @@ const translations = {
       credits: "Credits"
     },
     press: {
-      p1: "Post-punk duo <strong>AUTODEFENSA</strong> releases \"Anguila\" on April 4th, 2025. Recorded at the legendary <a href=\"https://estudiospanda.com.ar/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>PANDA STUDIOS</strong></a>, who consider it \"a new anthem of the post-punk genre\", the single was produced by <a href=\"https://www.lanacion.com.ar/economia/negocios/fabrica-de-hits-quien-es-el-nuevo-dueno-de-estudios-panda-nid23092022/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>SEBASTIÁN BERTUZZI</strong></a> (studio owner), edited by INVS Label and features art by <a href=\"https://www.instagram.com/jonathan_sirit/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>JONATHAN SIRIT</strong></a> (prominent designer known for creating Molchat Doma's visual identity and drummer of <a href=\"https://www.instagram.com/belgradoband/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\">\"Belgrado\"</a>).",
-      p2: "<strong>TERROR</strong> (vocals) —creator of Festival Roca Negra— and <strong>SANGRE</strong> (guitar/synthesizers) combine cold and organic sounds with brutalist aesthetics. The official music video will premiere in April. The band, formed in 2022, has opened for Clan of Xymox and performed at Teatro Rojas, La Tangente and other notable venues.",
+      p1: "Post-punk duo <strong>AUTODEFENSA</strong> releases \"Anguila\" on April 4th, 2025, a piece that takes the genre to its maximum expression. Recorded at <a href=\"https://estudiospanda.com.ar/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>PANDA STUDIOS</strong></a>, one of the best studios in Latin America, who consider it \"a new anthem of the post-punk genre\", the single was produced by <a href=\"https://www.lanacion.com.ar/economia/negocios/fabrica-de-hits-quien-es-el-nuevo-dueno-de-estudios-panda-nid23092022/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>SEBASTIÁN BERTUZZI</strong></a>, the studio owner. With a sound that reaches international standards and perfects its dark and meticulous essence, <strong>Anguila</strong> is released under INVS Label and features art by <a href=\"https://www.instagram.com/jonathan_sirit/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\"><strong>JONATHAN SIRIT</strong></a>—designer behind Molchat Doma's visual identity and drummer of <a href=\"https://www.instagram.com/belgradoband/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-[#FF2E33] hover:underline\">Belgrado</a>—. For all these reasons and more, <strong>Anguila</strong> brings together all the necessary factors to become one of the most relevant songs in the history of Latin American post-punk.",
+      p2: "<strong>TERROR</strong> (vocals) —creator of Festival Roca Negra, the most important post-punk event in Buenos Aires— and <strong>SANGRE</strong> (guitar, rhythms, synthesizers) combine cold and organic sounds with brutalist aesthetics. The official music video will premiere in April. With only 2 years of activity, the band has already managed to open for Clan of Xymox, one of the most outstanding groups in the history of gothic music, besides having shows at Teatro Rojas, La Tangente and many more notable venues.",
       p3: ""
     },
     about: {
-      p1: "Formed in 2022, the duo has managed to position themselves in the underground scene of Buenos Aires, performing at iconic venues such as Teatro Rojas, La Tangente, Strummer Bar, El Emergente and La Manzana de las Luces.",
+      p1: "Formed in 2023, the duo has managed to position themselves in the underground scene of Buenos Aires, performing at iconic venues such as Teatro Rojas, La Tangente, Strummer Bar, El Emergente and La Manzana de las Luces.",
       p2: "Among their notable achievements are opening for the legendary band Clan of Xymox at Uniclub.",
       p3: "\"Anguila\" follows their previous release \"Parte de Mi\" (2023) and anticipates their upcoming debut album.",
       p4: "",
@@ -73,7 +74,8 @@ const translations = {
       prod: "PROD, MIX & MASTER: SEBASTIÁN BERTUZZI",
       rec: "REC & MASTER: LEO LÓPEZ",
       mix: "MIX & MASTER: CHRISTIAN ALGARAÑAZ",
-      cover: "COVER ART: JONATHAN SIRIT"
+      cover: "COVER ART: JONATHAN SIRIT",
+      bass: "MICK - BASS"
     },
     contact: {
       title: "Press Contact",
@@ -105,94 +107,19 @@ export default function Home() {
   const handleDownload = async () => {
     const zip = new JSZip();
 
-    // Crear el contenido del archivo de texto
-    const textContent = language === 'es' ? `AUTODEFENSA - Press Kit
-
-COMUNICADO DE PRENSA
--------------------
-${t.press.p1}
-
-${t.press.p2}
-
-${t.press.p3}
-
-SOBRE AUTODEFENSA
-----------------
-${t.about.p1}
-
-${t.about.p2}
-
-${t.about.p3}
-
-${t.about.p4}
-
-${t.about.p5}
-
-CRÉDITOS
---------
-${t.credits.members}
-${t.credits.terror}
-${t.credits.sang}
-
-${t.credits.technical}
-${t.credits.prod}
-${t.credits.rec}
-${t.credits.mix}
-
-${t.credits.cover}
-
-CONTACTO DE PRENSA
------------------
-Teléfono: ${t.contact.phone}
-Email: ${t.contact.email}` : `AUTODEFENSA - Press Kit
-
-PRESS RELEASE
-------------
-${t.press.p1}
-
-${t.press.p2}
-
-${t.press.p3}
-
-ABOUT AUTODEFENSA
-----------------
-${t.about.p1}
-
-${t.about.p2}
-
-${t.about.p3}
-
-${t.about.p4}
-
-${t.about.p5}
-
-CREDITS
--------
-${t.credits.members}
-${t.credits.terror}
-${t.credits.sang}
-
-${t.credits.technical}
-${t.credits.prod}
-${t.credits.rec}
-${t.credits.mix}
-
-${t.credits.cover}
-
-PRESS CONTACT
-------------
-Phone: ${t.contact.phone}
-Email: ${t.contact.email}`;
-
-    // Agregar el archivo de texto al ZIP
-    zip.file(`autodefensa_presskit_${language}.txt`, textContent);
-
     // Descargar y agregar las fotos al ZIP
     const photos = ['photo1.jpg', 'photo2.jpg', 'photo3.jpg', 'photo4.jpg'];
     for (const photo of photos) {
       const response = await fetch(`/pics/${photo}`);
       const blob = await response.blob();
       zip.file(photo, blob);
+    }
+
+    // Agregar el PDF del press kit en español
+    if (language === 'es') {
+      const pdfResponse = await fetch('/pdf/press_es.pdf');
+      const pdfBlob = await pdfResponse.blob();
+      zip.file('autodefensa_presskit_es.pdf', pdfBlob);
     }
 
     // Generar y descargar el ZIP
@@ -320,7 +247,7 @@ Email: ${t.contact.email}`;
                   </div>
 
                   {/* Tab Content */}
-                  <div className="space-y-3 lg:space-y-4 text-sm lg:text-base flex-1 overflow-y-auto pr-1 sm:pr-2">
+                  <div className="space-y-3 lg:space-y-4 text-xs lg:text-sm flex-1 overflow-y-auto pr-1 sm:pr-2">
                     {activeTab === 'press' && (
                       <>
                         <p dangerouslySetInnerHTML={{ __html: t.press.p1 }} />
@@ -401,6 +328,7 @@ Email: ${t.contact.email}`;
                         <p className="uppercase leading-none">{t.credits.prod}</p>
                         <p className="uppercase leading-none">{t.credits.rec}</p>
                         <p className="uppercase leading-none">{t.credits.mix}</p>
+                        <p className="uppercase leading-none">{t.credits.bass}</p>
                         <p className="mt-4 uppercase leading-none">{t.credits.cover}</p>
                       </>
                     )}
